@@ -89,3 +89,4 @@ jobs:
           git add $KUSTOMIZATION_FILE
           git commit -m "Update image tag to ${{ env.IMAGE_TAG }} in kustomization.yaml"
           git push https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git HEAD:${{ github.ref_name }}
+          
